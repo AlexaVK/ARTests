@@ -1,5 +1,3 @@
-package amazonpackage;
-
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver; 
@@ -24,7 +22,6 @@ public class AmazonRaitingCheckTest {
 	}
 
 	public static void AmazonRaitingCheck() {
-		// comment: please make sure browser cache is disabled.				
 				driver.get("http://www.google.com");
 				
 				WebElement googleSearchfield = driver.findElement(By.name("q")); 
@@ -49,7 +46,7 @@ public class AmazonRaitingCheckTest {
 				}
 				else
 				{
-				System.out.print("Product doens't have 4.5 starts review");
+				System.out.print("Product doesn't have 4.5 starts review");
 				}
 				driver.quit(); 
 			}
